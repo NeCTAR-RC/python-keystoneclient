@@ -13,5 +13,8 @@ ifeq (,$(filter nocheck,$(DEB_BUILD_OPTIONS)))
 	bash run_tests.sh -N -P || true
 endif
 
+overide_dh_auto_clean:
+	rm -rf $(CURDIR)/pbr-*/
+
 get-orig-source:
 	uscan --verbose --force-download --rename --destdir=../build-area
