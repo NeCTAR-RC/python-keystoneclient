@@ -11,4 +11,4 @@ index 8533bde..e60b400 100644
  oslo.config>=1.2.0
  netaddr
 -Babel>=1.3
-+Babel>=0.96
++Babel>=0.9.6
